@@ -1,5 +1,4 @@
-// import 'package:flutter/material.dart';
-
+import 'package:first_app/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +12,7 @@ class PracticeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "First App",
-      home: Homepage(),
+      home: Homepage2(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -28,9 +27,10 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Vamos Ticketing App"),
       ),
-      body: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+      backgroundColor: Colors.blueAccent,
+      body: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
         Container(
-          color: Colors.black,
+          color: Colors.deepPurple,
           height: 100,
           width: 100,
         ),
